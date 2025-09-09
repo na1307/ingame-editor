@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "bluehill-ingame-editor",
+  "version": "${version}",
+  "name": "InGame Editor",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Bluehill"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/bluehill-ingame-editor/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "value": "net.bluehill.ingameeditor.InGameEditorClient",
+        "adapter": "kotlin"
+      }
+    ],
+    "fabric-datagen": [
+      {
+        "value": "net.bluehill.ingameeditor.InGameEditorDataGenerator",
+        "adapter": "kotlin"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.8",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-language-kotlin": "*",
+    "fabric-key-binding-api-v1": "*"
+  }
+}
